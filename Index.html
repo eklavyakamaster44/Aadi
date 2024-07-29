@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    
+  <meta charset="UTF-8">
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+    
+    
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .registration-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .registration-form h2 {
+            margin: 0 0 15px;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input[type="text"],
+        .input-group input[type="email"],
+        .input-group input[type="password"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .input-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background: #0056b3;
+        }
+        .privacy-policy {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .privacy-policy a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head><body>
+    
+<div class="registration-form">
+        <h2>Registration</h2>
+        <form>
+            <div class="input-group">
+                <label>
+                    <input name="account_type" value="personal" checked="checked" type="radio">
+                    Personal
+                </label>
+                <label>
+                    <input name="account_type" value="company" type="radio">
+                    Company
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" required="" type="email">
+            </div>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" required="" type="text">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" required="" type="password">
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input name="gender" value="male" checked="checked" type="radio">
+                    Male
+                </label>
+                <label>
+                    <input name="gender" value="female" type="radio">
+                    Female
+                </label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+            <div class="privacy-policy">
+                By clicking Register, you agree on our <a href="#">Privacy Policy</a> for W3Docs.
+            </div>
+        </form>
+    </div>
+
+</body></html>
